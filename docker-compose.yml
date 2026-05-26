@@ -1,0 +1,17 @@
+services:
+  app-portfolio:
+    build:
+      context: ./app-portfolio
+    ports:
+      - 3000:3000
+    image: willyabad/portfolio:1.0.0
+    volumes:
+      - /home/nimbux/logs/app-portfolio:/logs
+      - /home/nimbux/uploads:/uploads
+    container_name: app-portfolio
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge
