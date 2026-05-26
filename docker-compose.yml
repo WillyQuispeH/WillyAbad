@@ -1,5 +1,5 @@
 services:
-  app-portfolio:
+  app-portafolio:
     build:
       context: ./app-portafolio
     ports:
@@ -12,5 +12,5 @@ services:
       - portafolio-network
 
 networks:
-  portfolio-network:
+  portafolio-network:
     driver: bridge
