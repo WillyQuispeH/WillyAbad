@@ -31,7 +31,7 @@ export function TechStack() {
   return (
     <SectionShell
       id="stack"
-      index="02"
+      index="03"
       title="Herramientas elegidas por palanca."
       lead="Un stack afinado para interfaces tipadas, servicios fiables y cargas de IA que merecen estar en producción."
     >

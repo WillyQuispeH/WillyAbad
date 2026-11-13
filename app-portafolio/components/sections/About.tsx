@@ -6,24 +6,24 @@ import { SectionShell } from "@/components/ui/section";
 
 const timeline = [
   {
-    period: "2024 — hoy",
-    title: "Producto nativo en IA",
-    body: "RAG, agentes y UX en un solo hilo: recuperación, streaming y gobernanza listos para carga real.",
+    period: "2026",
+    title: "Agentes, MCP e identidad",
+    body: "Servidor MCP con OAuth para operar Portalfirma desde agentes, app de escritorio con agente integrado y validación biométrica con firma PAdES.",
   },
   {
-    period: "Era documentos",
-    title: "Editores y flujos regulados",
-    body: "Colaboración, aprobaciones y automatización alrededor de contenido que no admite improvisación.",
+    period: "2025 — hoy",
+    title: "Video con IA a escala",
+    body: "Clipiku: análisis de streams con Whisper y SigLIP en GPU serverless, render en la nube y campañas generadas por agentes.",
   },
   {
-    period: "Núcleo",
-    title: "Arquitectura bajo presión",
-    body: "Colas, cachés y límites de servicio que sobreviven picos y crecimiento de equipo.",
+    period: "2023 — hoy",
+    title: "Plataforma de firma electrónica",
+    body: "Portalfirma: de API única a ~34 servicios y apps, con autoridades certificadoras, notarías, pagos e IA sobre documentos.",
   },
   {
     period: "Origen",
-    title: "Full stack de base",
-    body: "APIs, modelado de datos e infra como código con DX como requisito, no como adorno.",
+    title: "Full stack para clientes",
+    body: "Portales de reclamos, gestión de inversiones, herramientas PDF y análisis funcional para empresas en Chile.",
   },
 ];
 
@@ -46,10 +46,10 @@ export function About() {
           className="lg:col-span-5"
         >
           <p className="text-base leading-relaxed text-[var(--muted)]">
-            Mi trabajo cruza editores asistidos por IA, APIs en streaming y
-            recuperación vectorial. Priorizo contratos claros, observabilidad desde
-            el primer despliegue y superficies que el equipo puede mantener sin
-            miedo.
+            Construyo plataformas donde la validez legal no es opcional: firma
+            electrónica, criptografía de documentos e identidad, con IA aplicada
+            donde realmente ahorra trabajo. Priorizo contratos claros, seguridad
+            desde el diseño y sistemas que el equipo puede mantener sin miedo.
           </p>
         </motion.div>
         <ol className="mt-12 space-y-0 lg:col-span-7 lg:mt-0">

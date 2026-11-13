@@ -37,6 +37,11 @@ function ProjectRow({
             <span className="font-mono text-xs text-[var(--muted)]">
               {project.year}
             </span>
+            {project.context && (
+              <span className="font-mono text-[11px] uppercase tracking-wider text-[var(--accent)]">
+                {project.context}
+              </span>
+            )}
           </div>
           <p className="mt-2 max-w-[52ch] text-sm text-[var(--muted)]">
             {project.tagline}
@@ -95,9 +100,9 @@ export function Projects() {
   return (
     <SectionShell
       id="projects"
-      index="03"
+      index="04"
       title="Trabajo con peso de producción."
-      lead="Cada entrada resume sistemas reales: datos, IA y experiencia en la misma narrativa. Expande para ver alcance y stack."
+      lead="Firma electrónica, identidad biométrica, video con IA y agentes: sistemas reales en producción. Expande cada uno para ver alcance y stack."
     >
       <div ref={ref} className="mt-16">
         <motion.div

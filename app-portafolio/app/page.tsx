@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { About } from "@/components/sections/About";
+import { Agents } from "@/components/sections/Agents";
 import { Contact } from "@/components/sections/Contact";
 import { CreativeLab } from "@/components/sections/CreativeLab";
 import { Experience } from "@/components/sections/Experience";
@@ -20,6 +21,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Agents />
         <TechStack />
         <Projects />
         <Experience />
@@ -30,7 +32,7 @@ export default function Home() {
         <div className="page-wrap flex flex-col gap-4 font-mono text-xs text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Willy Abad</p>
           <p>
-            Ingeniero de IA y desarrollador full stack ·{" "}
+            Ingeniero de agentes de IA · Full stack ·{" "}
             <a
               href="mailto:contacto@willyabad.dev"
               className="text-[var(--foreground)] underline-offset-2 hover:text-[var(--accent)] hover:underline"

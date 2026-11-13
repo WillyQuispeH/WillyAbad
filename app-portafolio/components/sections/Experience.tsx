@@ -50,7 +50,7 @@ export function Experience() {
   return (
     <SectionShell
       id="experience"
-      index="04"
+      index="05"
       title="Trayectoria medida en entregas."
       lead="Métricas orientativas y pilares que guían cómo diseño sistemas con IA y full stack."
     >

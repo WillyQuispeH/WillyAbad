@@ -8,7 +8,7 @@ import { SoundProvider } from "@/lib/sound/SoundContext";
 export function PortfolioShell({ children }: { children: ReactNode }) {
   return (
     <SoundProvider>
-      <LoadingScreen />
+      {/* <LoadingScreen /> */}
       <CommandPalette />
       {children}
     </SoundProvider>

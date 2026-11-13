@@ -21,7 +21,7 @@ export function Contact() {
   return (
     <SectionShell
       id="contact"
-      index="06"
+      index="07"
       title="Siguiente capa inteligente."
       lead="Si exploras flujos con IA, una superficie de documentos o una reescritura de plataforma, escribe con contexto y plazos."
       className="border-b-0"

@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Fira_Code } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Script from "next/script";
 import { PortfolioShell } from "@/components/shell/PortfolioShell";
 import "./globals.css";
 
-const firaCode = Fira_Code({
+const poppins = Poppins({
   variable: "--font-fira-code",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -16,11 +16,11 @@ const site = "https://willyabad.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(site),
   title: {
-    default: "Willy Abad — Ingeniero de IA y desarrollador full stack",
+    default: "Willy Abad — Ingeniero de agentes de IA y full stack",
     template: "%s — Willy Abad",
   },
   description:
-    "Portafolio de Willy Abad: sistemas de IA, editores de documentos inteligentes, automatización, arquitectura escalable y entrega full stack.",
+    "Portafolio de Willy Abad: plataformas de firma electrónica, identidad biométrica, agentes de IA y MCP, video con IA y arquitectura de microservicios full stack.",
   keywords: [
     "Willy Abad",
     "ingeniero IA",
@@ -29,7 +29,11 @@ export const metadata: Metadata = {
     "TypeScript",
     "LangChain",
     "OpenAI",
-    "editor de documentos",
+    "firma electrónica",
+    "PAdES",
+    "MCP",
+    "agentes de IA",
+    "NestJS",
     "automatización",
   ],
   authors: [{ name: "Willy Abad", url: site }],
@@ -39,15 +43,15 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: site,
     siteName: "Willy Abad",
-    title: "Willy Abad — Ingeniero de IA y desarrollador full stack",
+    title: "Willy Abad — Ingeniero de agentes de IA y full stack",
     description:
-      "Sistemas de IA, automatización y software escalable con Next.js, TypeScript e infraestructura moderna.",
+      "Agentes de IA que operan sistemas reales: servidores MCP, orquestación multi-agente y plataformas de firma electrónica en producción.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Willy Abad — Ingeniero de IA y desarrollador full stack",
+    title: "Willy Abad — Ingeniero de agentes de IA y full stack",
     description:
-      "Sistemas de IA, automatización y software escalable con Next.js, TypeScript e infraestructura moderna.",
+      "Agentes de IA que operan sistemas reales: servidores MCP, orquestación multi-agente y plataformas de firma electrónica en producción.",
   },
   robots: {
     index: true,
@@ -70,12 +74,17 @@ export default function RootLayout({
     "@type": "Person",
     name: "Willy Abad",
     url: site,
-    jobTitle: "Ingeniero de IA / Desarrollador full stack",
+    jobTitle: "Ingeniero de agentes de IA / Desarrollador full stack",
     description:
-      "Portafolio profesional: sistemas de IA, RAG, editores de documentos, automatización y arquitectura full stack con Next.js y TypeScript.",
+      "Ingeniero de agentes de IA: servidores MCP, orquestación multi-agente, Claude Agent SDK, RAG y plataformas full stack de firma electrónica.",
     email: "mailto:contacto@willyabad.dev",
     knowsAbout: [
+      "Agentes de IA",
+      "Model Context Protocol (MCP)",
+      "Sistemas multi-agente",
+      "Claude Agent SDK",
       "Inteligencia artificial",
+      "Firma electrónica",
       "Desarrollo full stack",
       "Next.js",
       "TypeScript",
@@ -88,7 +97,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${firaCode.variable} h-full antialiased`}
+      className={`${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-[var(--background)] font-sans text-[var(--foreground)]">
         <PortfolioShell>

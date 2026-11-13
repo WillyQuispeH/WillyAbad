@@ -29,7 +29,7 @@ export function CreativeLab() {
   return (
     <SectionShell
       id="metodo"
-      index="05"
+      index="06"
       title="Cómo trabajo cuando el sistema importa."
       lead="Sin efectos decorativos: criterios explícitos para producto, datos y modelos en el mismo plano."
     >

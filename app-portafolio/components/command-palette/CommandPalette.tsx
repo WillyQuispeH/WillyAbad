@@ -13,6 +13,7 @@ type Action = {
 const actions: Action[] = [
   { id: "hero", label: "Inicio", href: "#hero" },
   { id: "about", label: "Sobre mí", href: "#about" },
+  { id: "agentes", label: "Agentes de IA", href: "#agentes" },
   { id: "stack", label: "Stack", href: "#stack" },
   { id: "projects", label: "Proyectos", href: "#projects" },
   { id: "experience", label: "Trayectoria", href: "#experience" },
